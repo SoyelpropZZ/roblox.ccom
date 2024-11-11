@@ -18,44 +18,10 @@
     <script src="js/script.js"></script>
 </body>
 </html>
-/* styles.css */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-}
-.login-container {
-    width: 300px;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-h1 {
-    text-align: center;
-    color: #333;
-}
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-button:hover {
-    background-color: #0056b3;
-}
+// script.js
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita el envío del formulario para la demostración
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    alert(`Usuario: ${username}\nContraseña: ${password}`);
+});
