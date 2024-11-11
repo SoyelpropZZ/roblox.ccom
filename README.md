@@ -16,6 +16,6 @@
         </form>
         <p>¿No tienes cuenta? <a href="#">Regístrate</a></p>
     </div>
-    <script src="script.js"></script>
+ 
 </body>
 </html>
